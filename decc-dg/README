@@ -1,0 +1,54 @@
+This directory contains all the necessary files for running the 
+DECC-DG algorithm which is a cooperative co-evolutionary algorithm
+that uses differential grouping for forming the subcomponents of 
+the co-evolutionary framework. 
+This program is tested with the CEC'2010 and is based on the 
+following research paper:
+
+-----------
+References:
+-----------
+Omidvar, M.N.; Li, X.; Mei, Y.; Yao, X., "Cooperative Co-evolution with
+Differential Grouping for Large Scale Optimization," Evolutionary Computation,
+IEEE Transactions on, vol.PP, no.99, pp.1,1, 0
+http://dx.doi.org/10.1109/TEVC.2013.2281543
+
+----------------------
+Files and directories:
+----------------------
+ - benchmark       : this directory contains the necessary files for the
+                     CEC'2010 benchmark problems.
+ - decc.m          : this file is an implementation of a cooperative
+                     co-evolutionary framework.
+ - dg              : this directory contains the differential grouping
+                     datafiles and algorithm.
+ - diff_grouping.m : this function is used to read the differential grouping
+                     datafiles and form the subcomponents which are used
+                     by the cooperative
+                     co-evolutionary framework. This function is called
+                     in decc.m.
+ - README          : this readme file.
+ - result          : the experimental results are stored in this
+                     directory. The recorded statistics are best of all runs,
+                     mean, and standard deviation.
+ - runcompe.m      : sets the search domain for different functions.
+ - run.m           : this file can be used to run the DECC-DG algorithm.
+ - sansde.m        : the subcomponent optimizer based on SaNSDE.
+ - trace           : this directory contains the intermediate results which
+                     can be used for drawing convergence plots and further
+                     analysis.
+
+--------
+License:
+--------
+This program is to be used under the terms of the GNU General Public License 
+(http://www.gnu.org/copyleft/gpl.html).
+Author: Mohammad Nabi Omidvar
+e-mail: mn.omidvar AT gmail.com
+Copyright notice: (c) 2013 Mohammad Nabi Omidvar
+
+--------------
+Compatibility:
+--------------
+This program has been tested with Octave 3.6.2 and MATLAB (R2012a) 7.14.0.739
+on Ubuntu 12.04.3 LTS.
